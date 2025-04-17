@@ -1,0 +1,41 @@
+---------------------------------------class-1-----------------
+git add . / git add * / git add --a / git add -A  --> add a code the workspace to staging area
+git rm --cached filename / git restore --staged filename --> New files undo the code from staged to workspace
+git reset HEAD filename/git restore <file> --> Existing files undo the code from staged to workspace
+git checkout -- filename --> undo the inside the file content/discard changes done in a file
+git commit -m "commit msg" --> commit the code from satged to locat repository
+git remote add origin URL --> this is used for first time
+git push -u origin master --> move the changes from locat to central
+-----------------------------------class-2-----------------------
+git log --> check the commit logs
+git pull --> take the latest changes from the remote to local
+git stash --> temporary storage area
+git stash apply
+git stash list
+git stash clear
+---------------------------------class-3-------------------------
+git clone -b branchName uRL ---> create branch and clone also
+git branch -b branchName --> create and enter new branch
+git checkout branch
+git branch --> list the branches
+git branch -d branchName --> delete the branch name
+git merge other branchName and file also
+------------------------
+our code is already push in GitHub now we need to undo the particular commit in this scenario we can use revert command
+git log --oneline
+git revert --> it is used for when we have commit the code that code changes undo and create new commit id it does not disturb previous commits	
+git revert commit id
+git revert HEAD 
+git revert HEAD~N
+git revert commit id --no-edit --> not opened vi editor and direct created new commit-id
+------------
+
+git reset commit id --> undo the code and delete previous commit history and does not created commit-id and added previous data in this commit-id
+does not delete previous data with deleted commit id data and  all data in workspace
+
+git reset HEAD
+git reset HEAD~2
+git reset --soft commit id --> changes undo to workspace does not delete anything
+git reset -- mixed --> undo the changes to staging area 
+git reset --hard commit id --> delete previous commit and delete data also
+

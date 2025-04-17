@@ -1,0 +1,33 @@
+Class-1
+
+Git init --> it will create new local git repository
+Git clone --> used to copy a repository
+Git add --> add a files to staging area
+Git commit --> will create a snap shot of changes & save it to the git directory
+Git push --> push local changes to the origin
+Git fetch  get all the changes from the origin (No merge)
+Git pull   get all the changes from origin and merge
+git checkout -- filename --> undo the inside the file content/discard changes done in a file in workspace
+git log --> check the commit logs
+git stash --> temporary storage area
+git branch --> list the branches
+git branch -b branchName --> create and enter new branch
+git branch -d branchName --> delete the branch name
+Git checkout branchname --> enter the new branch
+
+
+
+
+git practice
+git config --global user.name “kumar”
+git config --global user.email  “kalva.kumar@gmail.com”
+Git init
+Git add .
+Git commit -m “comit name”
+Git branch -M main
+Git remote add origin url
+Git push -u origin main
+
+
+
+git add . / git add * / git add --a / git add -A  --> add a code the workspace to staging area
